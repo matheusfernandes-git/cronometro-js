@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronômetro</title>
+
+    <style>
+
+        *{
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+
+        #cr{
+            text-align: center;
+            margin: auto;
+            margin-top: 300px;
+            padding: 10px;
+            background-color: #000000c4;
+            width: 400px;
+            border-radius: 8px;
+        }
+
+        #contador{
+            padding: 5px;
+            margin-bottom: 7px;
+            font-size: 2.5em;
+            color: #ffffff;
+        }
+
+        button{
+            width: 5.3em;
+            padding: 6px;
+            font-size: 1.1em;
+            margin-right: 7px;
+            cursor: pointer;
+            border-radius: 2px;
+            border: #ffffff;
+        }
+
+        #startbutton{
+            background-color: rgb(0, 128, 0);
+            color: #ffffff;
+        }
+
+        #pausebutton{
+            background-color: rgba(255, 166, 0, 0.733);
+            color: #ffffff;
+        }
+
+        #stopbutton{
+            background-color: #ff0000c5;
+            color: #ffffff;
+        }
+    
+
+    </style>
+</head>
+<body>
+    <div id="cr">
+            <h1 id="contador">00:00:00</h1>
+            <button id="startbutton" onclick="iniciou()">Iniciar</button>
+            <button id="pausebutton" onclick="pausou()">Pausar</button>
+            <button id="stopbutton" onclick="parou()">Parar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
